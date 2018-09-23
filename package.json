@@ -1,0 +1,31 @@
+{
+  "name": "wakeupme",
+  "version": "1.0.0",
+  "description": "This is a music alark clock!",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elmaoguerra/MusicAlarmClock.git"
+  },
+  "keywords": [
+    "Alarm",
+    "clock",
+    "node",
+    "js",
+    "linux"
+  ],
+  "author": "elMaoGuerra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elmaoguerra/MusicAlarmClock/issues"
+  },
+  "homepage": "https://github.com/elmaoguerra/MusicAlarmClock#readme"
+}
