@@ -4,7 +4,11 @@
   "description": "This is a music alark clock!",
   "main": "index.js",
   "dependencies": {
-    "express": "^4.16.3"
+    "@google-cloud/text-to-speech": "^0.3.0",
+    "cron": "^1.4.1",
+    "express": "^4.16.3",
+    "moment": "^2.22.2",
+    "shelljs": "^0.8.2"
   },
   "devDependencies": {},
   "scripts": {
