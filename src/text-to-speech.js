@@ -1,5 +1,6 @@
 const fs = require('fs');
 const mplayer = require('./mplayer');
+const path = require('path');
 
 // Imports the Google Cloud client library
 const textToSpeech = require('@google-cloud/text-to-speech');
@@ -36,10 +37,10 @@ const api = {
                     console.error('ERROR:', err);
                     return;
                 }
-                const path = __dirname +`/${audioFile}`;
-                console.log(path);
+                const filePath = path.dirname(__dirname) +`/${audioFile}`;
+                console.log(filePath);
                 
-                mplayer.playSound(path);
+                mplayer.playSound(filePath);
             });
         });
     }

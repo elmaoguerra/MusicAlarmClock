@@ -1,13 +1,19 @@
 const express = require('express');
 const app = express();
 const moment = require('moment');
-
+const shell = require('shelljs');
 const text = require('./src/text-to-speech');
 
 const job = require('./src/cronjob');
 
 app.get('/welcome', function(req, res){
   text.convert('welcome', 'Welcome to Music Alarm Clock');
+});
+
+app.get('/stopAlarm', function(req, res){
+   shell.exec('killall mplayer');
+   job.stop();
+   res.send('Alarma detenida');
 });
 
 app.get('/alarmclock', function (req, res) {
